@@ -80,7 +80,7 @@ describe("Todos Component", () => {
     expect(todo2Element).toBeInTheDocument();
   });
 
-  test("Should remove completed todos when click clear all completed button", () => {
+  it("Should remove completed todos when click clear all completed button", () => {
     render(<Todos />);
 
     const inputElement = screen.getByPlaceholderText("What needs to be done?");
