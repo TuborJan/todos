@@ -1,0 +1,62 @@
+.todos {
+  max-width: 600px;
+  margin: 0 auto;
+  margin-top: 20px;
+  background: #ffffff;
+
+  &__input {
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    border-bottom: 2px solid #eeeeee;
+
+    input,
+    button {
+      padding: 5px 10px;
+    }
+
+    input {
+      font-size: 20px;
+    }
+  }
+
+  &__placeholder {
+    padding: 20px 10px;
+  }
+
+  &__list {
+    text-align: start;
+  }
+
+  &__todo {
+    overflow: hidden;
+    display: flex;
+    padding: 5px 10px;
+    font-size: 20px;
+    border-bottom: 1px solid #eeeeee;
+
+    input {
+      width: 20px;
+      margin-right: 10px;
+    }
+
+    .description {
+      font-size: 25px;
+
+      &__complete {
+        text-decoration: line-through;
+      }
+    }
+  }
+
+  &__info {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 10px;
+  }
+
+  &__filter {
+    display: flex;
+    gap: 20px;
+  }
+}
